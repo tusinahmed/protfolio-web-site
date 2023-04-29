@@ -96,3 +96,234 @@
     padding: 5px;
   }
 }
+
+/* // update part */
+
+.work {
+  width: 327px;
+  height: 474px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+
+.works-part {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  gap: 10px;
+}
+
+.work-image-part {
+  background-color: #ebf0ee;
+  width: 327px;
+  height: 222px;
+  border-radius: 7px;
+}
+
+.work-text-part {
+  width: 327px;
+  height: 252px;
+}
+
+.ul-list li {
+  list-style: none;
+  float: left;
+  font-size: 15px;
+  margin-right: 5px;
+  padding: 5px;
+  font-weight: 600;
+  background: #ebf0ee;
+  border-radius: 4px;
+  color: #3a4a42;
+}
+
+.work-title {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #3a4a42;
+}
+
+.btn {
+  width: 122px;
+  height: 48px;
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+}
+
+.btn-div {
+  margin-top: 80px;
+  margin-left: 90px;
+}
+
+/* work part media quaray for mobile version start  */
+
+/* change number 1 start */
+@media only screen and (min-width: 375px) {
+  .works-part {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* change number 1 end */
+
+/* work part media quaray for mobile version end  */
+
+/* work part media quaray for desktop version start  */
+
+@media only screen and (min-width: 768px) {
+  .works-part {
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* work part media quaray for desktop version end */
+
+/* about me part css start  */
+
+.full-about-me {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  position: relative;
+}
+
+.image-size-is {
+  width: 287px;
+  height: 126px;
+  display: none;
+}
+
+.image-size-is2 {
+  width: 269px;
+  height: 244px;
+  display: none;
+}
+
+.title-about-me {
+  text-align: center;
+}
+
+.des-about-me {
+  text-align: center;
+}
+
+.btn-about-me {
+  background: #36b37f;
+  width: 153px;
+  height: 48px;
+  border: none;
+  border-radius: 6px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* about me mobile resphonsive */
+
+@media only screen and (min-width: 375px) {
+  .full-about-me {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    background-image: url(images/b.png);
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+  }
+
+  .text-part-about-me {
+    margin-top: -150px;
+  }
+
+  .title-about-me {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .des-about-me {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .btn-about-me {
+    margin-top: 20px;
+  }
+}
+
+/* skill item start */
+
+.all-skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -280px;
+}
+
+.skill-item {
+  width: 80%;
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 20px;
+}
+
+.allul {
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.allul li {
+  margin-right: 5px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
+}
+
+.recent-work {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.hrs {
+  width: 48px;
+  height: 4px;
+  background: #36b37e;
+  border-radius: 24px;
+  margin-left: 45%;
+  margin-top: 10px;
+}
+
+.skill-ulall {
+  list-style: none;
+}
