@@ -117,7 +117,7 @@
 }
 
 .work-image-part {
-  background-color: gray;
+  background-color: #ebf0ee;
   width: 327px;
   height: 222px;
   border-radius: 7px;
@@ -164,14 +164,18 @@
 }
 
 /* work part media quaray for mobile version start  */
+
+/* change number 1 start */
 @media only screen and (min-width: 375px) {
   .works-part {
     width: 80%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    grid-template-columns: 1fr;
+    align-items: center;
   }
 }
+/* change number 1 end */
 
 /* work part media quaray for mobile version end  */
 
@@ -317,4 +321,8 @@
   border-radius: 24px;
   margin-left: 45%;
   margin-top: 10px;
+}
+
+.skill-ulall {
+  list-style: none;
 }
