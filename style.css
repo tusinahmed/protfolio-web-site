@@ -115,6 +115,7 @@
   margin-bottom: 10%;
   gap: 10px;
 }
+
 .work-image-part {
   background-color: gray;
   width: 327px;
@@ -154,7 +155,7 @@
   border-radius: 4px;
   border: none;
   font-size: 17px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .btn-div {
@@ -184,17 +185,16 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 /* work part media quaray for desktop version end */
 
 /* about me part css start  */
+
 .full-about-me {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   position: relative;
-}
-
-.text-part-about-me {
 }
 
 .image-size-is {
@@ -249,6 +249,7 @@
     font-weight: 700;
     font-size: 40px;
   }
+
   .des-about-me {
     font-weight: 400;
     font-size: 20px;
@@ -292,10 +293,9 @@
 
 .allul li {
   margin-right: 5px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
   padding: 5px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
