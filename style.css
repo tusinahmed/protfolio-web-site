@@ -333,6 +333,7 @@
   font-size: 40px;
   text-align: center;
   color: #172b4d;
+  margin-bottom: 30px;
 }
 
 .inside-form-full {
@@ -389,4 +390,12 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.dayall {
+  background-image: url(images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-position-y: 595px;
+  margin-right: 0;
 }
