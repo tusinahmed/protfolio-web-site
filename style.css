@@ -370,13 +370,13 @@
 }
 
 .btnsubmit {
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
   width: 129px;
   height: 48px;
   background: #36b37f;
   border-radius: 4px;
+  color: white;
+  border: none;
+
   margin: 0 auto;
   display: block;
 }
