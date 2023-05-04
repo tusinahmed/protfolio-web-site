@@ -3,7 +3,6 @@
 }
 
 *,
-*::afer,
 *::before {
   box-sizing: border-box;
 }
@@ -25,6 +24,7 @@
 .union {
   display: none;
 }
+
 .nav-bar a {
   font-style: normal;
   font-weight: 600;
@@ -147,7 +147,7 @@
 .full-about-me {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  padding: 100px 0px 100px 0px;
+  padding: 100px 100px;
 }
 
 .image-size-is {
@@ -212,15 +212,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
   list-style: none;
 }
 
 .skill-item {
   height: 316px;
   width: 369px;
-  left: 0px;
-  top: 0px;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
@@ -233,14 +230,13 @@
 .allul {
   display: flex;
   list-style: none;
-
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .allul li {
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
   margin-right: 10px;
   padding: 5px;
@@ -255,6 +251,7 @@
 .form-input-part {
   margin-left: 10px;
 }
+
 .full-form-part {
   width: 90%;
   display: grid;
@@ -266,7 +263,6 @@
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-
   background-image: url(images/form-left-part.png),
     url(images/form-right-part.png);
   background-repeat: no-repeat;
@@ -274,7 +270,6 @@
   background-position: bottom left, bottom right;
   background-position-y: 200px 200px;
   padding: 40px;
-
   margin-bottom: 100px;
 }
 
@@ -305,8 +300,6 @@
 .fullname {
   height: 48px;
   width: 330px;
-  left: 0px;
-  top: 0px;
   border-radius: 4px;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -320,8 +313,6 @@
 .message {
   height: 114px;
   width: 684px;
-  left: 0px;
-  top: 0px;
   border-radius: 4px;
   margin-top: 20px;
   border: 1px solid gray;
@@ -345,6 +336,7 @@ footer {
 .mail-foorter {
   display: none;
 }
+
 @media only screen and (max-width: 765px) and (min-width: 375px) {
   .nav-bar a {
     display: none;
@@ -355,6 +347,7 @@ footer {
     margin-left: 150px;
     margin-top: 10px;
   }
+
   /* about me mobile part */
   .full-about-me {
     width: 100%;
@@ -433,6 +426,7 @@ footer {
     height: 48px;
     margin-bottom: 20px;
   }
+
   .emailAdress {
     width: 90%;
     height: 48px;
@@ -448,7 +442,7 @@ footer {
   }
 
   .form-into-text {
-    weight: 700;
+    font-weight: 700;
     font-size: 40px;
     text-align: center;
   }
