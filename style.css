@@ -2,10 +2,7 @@
   margin: 0;
 }
 
-*,
-*::before {
-  box-sizing: border-box;
-}
+
 
 .full-header {
   width: 100%;
@@ -23,6 +20,9 @@
 
 .union {
   display: none;
+  margin-left: 200px;
+  margin-top: 20px;
+  padding: 5px;
 }
 
 .nav-bar a {
@@ -75,6 +75,28 @@
 .images {
   margin-bottom: 60px;
   margin-top: 30px;
+}
+
+@media only screen and (max-width: 375px) {
+  .full-header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .nav-bar a {
+    display: none;
+  }
+
+  .union {
+    display: block;
+    margin-left: 200px;
+    margin-top: 20px;
+    padding: 5px;
+  }
 }
 
 /* // update part */
@@ -143,81 +165,133 @@
   margin-left: 90px;
 }
 
-/* about me part start */
+/* work part media quaray for mobile version start  */
+
+/* change number 1 start */
+@media only screen and (min-width: 375px) {
+  .works-part {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* change number 1 end */
+
+/* work part media quaray for mobile version end  */
+
+/* work part media quaray for desktop version start  */
+
+@media only screen and (min-width: 768px) {
+  .works-part {
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* work part media quaray for desktop version end */
+
+/* about me part css start  */
+
 .full-about-me {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
+
   padding: 100px 100px;
+
+  position: relative;
+
 }
 
 .image-size-is {
-  width: 288px;
+  width: 287px;
   height: 126px;
-  margin-top: 100px;
-  display: block;
+  display: none;
 }
 
 .image-size-is2 {
   width: 269px;
   height: 244px;
-  margin-top: -100px;
-  display: block;
-}
-
-.text-part-about-me {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+  display: none;
 }
 
 .title-about-me {
-  font-weight: 700;
-  font-size: 40px;
   text-align: center;
-  color: #172b4d;
 }
 
 .des-about-me {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
   text-align: center;
-  color: #42526e;
-  margin-top: 20px;
 }
 
-.about-me-btn {
+.btn-about-me {
+  background: #36b37f;
   width: 153px;
   height: 48px;
-  margin-top: 20px;
-}
-
-.recent-work {
-  text-align: center;
-}
-
-.hrs {
-  width: 48px;
-  height: 4px;
-  background: #36b37e;
+  border: none;
+  border-radius: 6px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  display: block;
+}
+
+/* about me mobile resphonsive */
+
+@media only screen and (min-width: 375px) {
+  .full-about-me {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    background-image: url(images/b.png);
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+  }
+
+  .text-part-about-me {
+    margin-top: -150px;
+  }
+
+  .title-about-me {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .des-about-me {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .btn-about-me {
+    margin-top: 20px;
+  }
 }
 
 /* skill item start */
 
-.skill-ulall {
+.all-skills {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+
   list-style: none;
 }
 
 .skill-item {
   height: 316px;
   width: 369px;
+
+  margin-top: -280px;
+}
+
+.skill-item {
+  width: 80%;
+
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
@@ -225,24 +299,38 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 24px;
+  padding: 20px;
 }
 
 .allul {
   display: flex;
   list-style: none;
+
   justify-content: center;
   align-items: center;
+
+  margin-top: 10px;
+
   flex-wrap: wrap;
+  gap: 5px;
 }
 
 .allul li {
+
+
+  margin-right: 5px;
+
   background: #fff;
   border-radius: 8px;
-  margin-right: 10px;
   padding: 5px;
-  text-align: center;
-  margin-top: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
 }
+
 
 /* skill item end */
 
@@ -271,71 +359,98 @@
   background-position-y: 200px 200px;
   padding: 40px;
   margin-bottom: 100px;
+
+.recent-work {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 40px;
 }
 
-.form-text {
+.hrs {
+  width: 48px;
+  height: 4px;
+  background: #36b37e;
+  border-radius: 24px;
+  margin-left: 45%;
+  margin-top: 10px;
+}
+
+.skill-ulall {
+  list-style: none;
+}
+
+/* form part css style */
+.form-into-text {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #172b4d;
+  margin-bottom: 30px;
+}
+
+.inside-form-full {
+  width: 100%;
+}
+
+.contact {
+  width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  margin: 0 auto;
 }
 
-.image-down-form {
-  width: 130px;
-  height: 105px;
-  position: absolute;
-  bottom: 0;
-}
-
-.emailAdress {
-  width: 675px;
-  height: 48px;
-}
-
-.input-fullname {
-  display: flex;
-}
 
 .fullname {
   height: 48px;
   width: 330px;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  border: 1px solid gray;
-}
 
-.FullNameMobile {
-  display: none;
+.fullname,
+.emailAdress {
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+
+  border-radius: 4px;
+  width: 327px;
+  height: 48px;
+  margin-bottom: 10px;
 }
 
 .message {
+
   height: 114px;
   width: 684px;
+
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #60c095;
+
   border-radius: 4px;
-  margin-top: 20px;
-  border: 1px solid gray;
-  margin-bottom: 15px;
+  width: 327px;
+  height: 114px;
+  margin-bottom: 10px;
 }
 
-.form-btn-submit {
+.btnsubmit {
+  width: 129px;
+  height: 48px;
   background: #36b37f;
   border-radius: 4px;
-  border: none;
   color: white;
-  padding: 5px 10px 5px 10px;
+  border: none;
+  margin: 0 auto;
+  display: block;
 }
-
-/* end form part */
 
 footer {
-  text-align: center;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.mail-foorter {
-  display: none;
-}
 
 @media only screen and (max-width: 765px) and (min-width: 375px) {
   .nav-bar a {
@@ -461,4 +576,13 @@ footer {
   .footer-hr {
     display: none;
   }
+
+
+.dayall {
+  background-image: url(images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-position-y: 595px;
+  margin-right: 0;
+
 }
