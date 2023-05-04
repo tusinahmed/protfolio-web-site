@@ -2,6 +2,12 @@
   margin: 0;
 }
 
+*,
+*::afer,
+*::before {
+  box-sizing: border-box;
+}
+
 .full-header {
   width: 100%;
   height: 100vh;
@@ -18,11 +24,7 @@
 
 .union {
   display: none;
-  margin-left: 200px;
-  margin-top: 20px;
-  padding: 5px;
 }
-
 .nav-bar a {
   font-style: normal;
   font-weight: 600;
@@ -73,28 +75,6 @@
 .images {
   margin-bottom: 60px;
   margin-top: 30px;
-}
-
-@media only screen and (max-width: 375px) {
-  .full-header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
-
-  .nav-bar a {
-    display: none;
-  }
-
-  .union {
-    display: block;
-    margin-left: 200px;
-    margin-top: 20px;
-    padding: 5px;
-  }
 }
 
 /* // update part */
@@ -163,120 +143,84 @@
   margin-left: 90px;
 }
 
-/* work part media quaray for mobile version start  */
-
-/* change number 1 start */
-@media only screen and (min-width: 375px) {
-  .works-part {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-/* change number 1 end */
-
-/* work part media quaray for mobile version end  */
-
-/* work part media quaray for desktop version start  */
-
-@media only screen and (min-width: 768px) {
-  .works-part {
-    width: 80%;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* work part media quaray for desktop version end */
-
-/* about me part css start  */
-
+/* about me part start */
 .full-about-me {
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  position: relative;
+  padding: 100px 0px 100px 0px;
 }
 
 .image-size-is {
-  width: 287px;
+  width: 288px;
   height: 126px;
-  display: none;
+  margin-top: 100px;
+  display: block;
 }
 
 .image-size-is2 {
   width: 269px;
   height: 244px;
-  display: none;
-}
-
-.title-about-me {
-  text-align: center;
-}
-
-.des-about-me {
-  text-align: center;
-}
-
-.btn-about-me {
-  background: #36b37f;
-  width: 153px;
-  height: 48px;
-  border: none;
-  border-radius: 6px;
-  margin: 0 auto;
+  margin-top: -100px;
   display: block;
 }
 
-/* about me mobile resphonsive */
+.text-part-about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
 
-@media only screen and (min-width: 375px) {
-  .full-about-me {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    position: relative;
-    background-image: url(images/b.png);
-    background-repeat: no-repeat;
-    margin-bottom: 10px;
-  }
+.title-about-me {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #172b4d;
+}
 
-  .text-part-about-me {
-    margin-top: -150px;
-  }
+.des-about-me {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #42526e;
+  margin-top: 20px;
+}
 
-  .title-about-me {
-    font-weight: 700;
-    font-size: 40px;
-  }
+.about-me-btn {
+  width: 153px;
+  height: 48px;
+  margin-top: 20px;
+}
 
-  .des-about-me {
-    font-weight: 400;
-    font-size: 20px;
-  }
+.recent-work {
+  text-align: center;
+}
 
-  .btn-about-me {
-    margin-top: 20px;
-  }
+.hrs {
+  width: 48px;
+  height: 4px;
+  background: #36b37e;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 /* skill item start */
 
-.all-skills {
+.skill-ulall {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  margin-top: -280px;
+  justify-content: space-evenly;
+  list-style: none;
 }
 
 .skill-item {
-  width: 80%;
+  height: 316px;
+  width: 369px;
+  left: 0px;
+  top: 0px;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
@@ -284,114 +228,243 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 24px;
-  padding: 20px;
 }
 
 .allul {
   display: flex;
   list-style: none;
-  margin-top: 10px;
+
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 5px;
 }
 
 .allul li {
-  margin-right: 5px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 8px;
+  margin-right: 10px;
   padding: 5px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #36b37e;
-}
-
-.recent-work {
   text-align: center;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 40px;
+  margin-top: 5px;
 }
 
-.hrs {
-  width: 48px;
-  height: 4px;
-  background: #36b37e;
-  border-radius: 24px;
-  margin-left: 45%;
-  margin-top: 10px;
+/* skill item end */
+
+/* start form part  */
+
+.form-input-part {
+  margin-left: 10px;
+}
+.full-form-part {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 3fr 4fr;
 }
 
-.skill-ulall {
-  list-style: none;
-}
-
-/* form part css style */
-.form-into-text {
-  font-weight: 700;
-  font-size: 40px;
-  text-align: center;
-  color: #172b4d;
-  margin-bottom: 30px;
-}
-
-.inside-form-full {
-  width: 100%;
-}
-
-.contact {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
-.fullname,
-.emailAdress {
-  box-sizing: border-box;
-  background: #fff;
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  width: 327px;
-  height: 48px;
-  margin-bottom: 10px;
-}
-
-.message {
-  box-sizing: border-box;
-  background: #fff;
-  border: 1px solid #60c095;
-  border-radius: 4px;
-  width: 327px;
-  height: 114px;
-  margin-bottom: 10px;
-}
-
-.btnsubmit {
-  width: 129px;
-  height: 48px;
-  background: #36b37f;
-  border-radius: 4px;
-  color: white;
-  border: none;
-  margin: 0 auto;
-  display: block;
-}
-
-footer {
-  margin-top: 25px;
+.master-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  margin-top: 40px;
+
+  background-image: url(images/form-left-part.png),
+    url(images/form-right-part.png);
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: bottom left, bottom right;
+  background-position-y: 200px 200px;
+  padding: 40px;
+
+  margin-bottom: 100px;
 }
 
-.dayall {
-  background-image: url(images/footer-bg.png);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-position-y: 595px;
-  margin-right: 0;
+.form-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-down-form {
+  width: 130px;
+  height: 105px;
+  position: absolute;
+  bottom: 0;
+}
+
+.emailAdress {
+  width: 675px;
+  height: 48px;
+}
+
+.input-fullname {
+  display: flex;
+}
+
+.fullname {
+  height: 48px;
+  width: 330px;
+  left: 0px;
+  top: 0px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border: 1px solid gray;
+}
+
+.FullNameMobile {
+  display: none;
+}
+
+.message {
+  height: 114px;
+  width: 684px;
+  left: 0px;
+  top: 0px;
+  border-radius: 4px;
+  margin-top: 20px;
+  border: 1px solid gray;
+  margin-bottom: 15px;
+}
+
+.form-btn-submit {
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 5px 10px 5px 10px;
+}
+
+/* end form part */
+
+footer {
+  text-align: center;
+}
+
+.mail-foorter {
+  display: none;
+}
+@media only screen and (max-width: 765px) and (min-width: 375px) {
+  .nav-bar a {
+    display: none;
+  }
+
+  .union {
+    display: block;
+    margin-left: 150px;
+    margin-top: 10px;
+  }
+  /* about me mobile part */
+  .full-about-me {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url(images/b.png);
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+  }
+
+  .image-size-is {
+    display: none;
+  }
+
+  .image-size-is2 {
+    display: none;
+  }
+
+  /* about me mobile part */
+
+  /* My Recent Works Mobile part start  */
+  .works-part {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work {
+    width: 327px;
+    height: 474px;
+    border: 1px solid gray;
+    border-radius: 8px;
+  }
+
+  /* My Rectnet work mobile part end */
+
+  /* skill part mobile part done */
+  .skill-ulall {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .skill-item {
+    height: 316px;
+    width: 327px;
+    background: #ebf0ee;
+    border: 1px solid #c1c7d0;
+    border-radius: 8px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+
+  /* Form part mobile start  */
+  .full-form-part {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .master-form {
+    background-image: url(images/form-right-part.png);
+    background-position: bottom right;
+    background-position-x: 330px;
+  }
+
+  .fullname {
+    display: none;
+  }
+
+  .FullNameMobile {
+    display: block;
+    width: 90%;
+    height: 48px;
+    margin-bottom: 20px;
+  }
+  .emailAdress {
+    width: 90%;
+    height: 48px;
+  }
+
+  .message {
+    width: 90%;
+    height: 114px;
+  }
+
+  .image-down-form {
+    display: none;
+  }
+
+  .form-into-text {
+    weight: 700;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .form-btn-submit {
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* form mobile part end */
+
+  .mail-foorter {
+    display: block;
+  }
+
+  .footer-hr {
+    display: none;
+  }
 }
