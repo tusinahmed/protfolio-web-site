@@ -266,12 +266,11 @@
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  background-image: url(images/form-left-part.png),
-    url(images/form-right-part.png);
+  background-image: url(images/form-left-part.png), url(images/form-right-part.png);
   background-repeat: no-repeat;
   background-size: 10%;
   background-position: bottom left, bottom right;
-  background-position-y: 200px 200px;
+  background-position-y: 200px, 100px;
   padding: 40px;
   margin-bottom: 100px;
 }
