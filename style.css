@@ -333,3 +333,72 @@
   list-style: none;
 }
 
+
+/* form part css style */
+.form-into-text {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #172b4d;
+  margin-bottom: 30px;
+}
+
+.inside-form-full {
+  width: 100%;
+}
+
+.contact {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.fullname,
+.emailAdress {
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  width: 327px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+.message {
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  width: 327px;
+  height: 114px;
+  margin-bottom: 10px;
+}
+
+.btnsubmit {
+  width: 129px;
+  height: 48px;
+  background: #36b37f;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  margin: 0 auto;
+  display: block;
+}
+
+footer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dayall {
+  background-image: url(images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-position-y: 595px;
+  margin-right: 0;
+}
+
