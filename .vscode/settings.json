@@ -1,3 +1,6 @@
 {
-  "eslint.enable": false
+  "eslint.enable": true,
+  "eslint.debug": true,
+  "eslint.format.enable": true,
+  "editor.formatOnSave": true
 }

@@ -238,6 +238,11 @@
   flex-wrap: wrap;
 }
 
+.skill-title {
+  color: #344563;
+  margin-bottom: 20px;
+}
+
 .allul li {
   background: #fff;
   border-radius: 8px;
@@ -245,6 +250,9 @@
   padding: 5px;
   text-align: center;
   margin-top: 5px;
+  color: #36b37e;
+  font-weight: 600;
+  font-size: 12px;
 }
 
 /* skill item end */
