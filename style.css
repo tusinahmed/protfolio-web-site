@@ -156,6 +156,11 @@
   border: none;
   font-size: 17px;
   color: #fff;
+  transition: width 3s;
+}
+
+.btn:hover {
+  width: 200px;
 }
 
 .btn-div {
@@ -328,6 +333,7 @@
   list-style: none;
 }
 
+
 /* form part css style */
 .form-into-text {
   font-weight: 700;
@@ -395,3 +401,4 @@ footer {
   background-position-y: 595px;
   margin-right: 0;
 }
+
