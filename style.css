@@ -266,7 +266,8 @@
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  background-image: url(images/form-left-part.png),
+  background-image: 
+    url(images/form-left-part.png),
     url(images/form-right-part.png);
   background-repeat: no-repeat;
   background-size: 10%;
