@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 .full-header {
   width: 100%;
   height: 100vh;
@@ -111,13 +115,14 @@
 .ul-list li {
   list-style: none;
   float: left;
-  font-size: 15px;
+  font-size: 12px;
   margin-right: 5px;
   padding: 5px;
   font-weight: 600;
   background: #ebf0ee;
   border-radius: 4px;
   color: #3a4a42;
+  margin-top: 2px;
 }
 
 .work-title {
@@ -126,6 +131,7 @@
   margin-top: 15px;
   margin-bottom: 15px;
   color: #3a4a42;
+  font-family: 'Poppins', sans-serif;
 }
 
 .btn {
