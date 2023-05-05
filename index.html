@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="full-header">
@@ -47,7 +51,7 @@
         
       
 
-        <div class="images">
+        <div class="s">
           <a href=""> <img src="images/git.png" alt="git logo" /> </a>
           <a href=""> <img src="images/Linkedin icon.png" alt="linkdin logo" /> </a>
           <a href=""> <img src="images/Vector.png" alt="vector logo" /> </a>
@@ -219,7 +223,7 @@
 
       <section class="full-about-me">
         <div>
-          <img
+          <img 
             class="image-size-is"
             src="images/about-me-left.png"
             alt="bird icon"
@@ -235,7 +239,7 @@
             don’t hesitate to contact me.
           </p>
 
-          <button class="btn-about-me">Get My resume</button>
+          <button class="btn about-me-btn">Get My resume</button>
         </div>
         <div>
           <img
@@ -248,7 +252,8 @@
 
       <!-- About me section done -->
 
-      <!-- Skill section start  -->
+      <!-- Skill section start  --> 
+
       <section class="all-skills">
 
         <ul class="skill-ulall">
@@ -258,7 +263,7 @@
             </div>
   
             <div>
-              <h1>Languages</h1>
+              <h1 class="skill-title">Languages</h1>
             </div>
   
             <div>
@@ -277,7 +282,7 @@
             </div>
   
             <div>
-              <h1>Frameworks</h1>
+              <h1  class="skill-title">Frameworks</h1>
             </div>
   
             <div>
@@ -298,7 +303,7 @@
               </div>
     
               <div>
-                <h1>Skills</h1>
+                <h1 class="skill-title" >Skills</h1>
               </div>
     
               <div>
@@ -312,44 +317,60 @@
               </div>
             </div>
           </li>
-        </ul>
-
-
-        <!-- ullist item test checking  -->
-       
+        </ul> 
+         
       </section>
-      <!-- Skill section end  -->
+      <!-- Skill section end 
 
 
       <!-- Form part start -->
-      <div class="dayall"> 
+      <div class="master-form"> 
       <section class="full-form-part">
-        <h1 class="form-into-text">I'm always <br> interested in <br> hearing about <br> new projects, so <br> if you'd like to <br> chat please get <br> in touch. </h1>
 
-        <div class="contact" >
+        <div class="form-text"> 
+        <h1 class="form-into-text">I'm always  interested in  hearing about  new projects, so  if you'd like to  chat please get  in touch. </h1>
+        <img class="image-down-form" src="images/Form-text-down.png" />
+        </div>
+
+        <div class="form-input-part" >
           <Form action="https://formspree.io/f/mnqywvlo" method="post" class="inside-form-full" >
             <div class="info">
+              
+              <div class="input-fullname"> 
+                <label for="fullname"></label>
+              <input type="text" name="fullname" class="FullNameMobile" placeholder="FullNameMobile" maxlength="30" required  >
               <label for="fullname"></label>
-              <input type="text" name="fullname" class="fullname" placeholder="Full name" maxlength="30" required  >
+              <input type="text" name="fullname" class="fullname" placeholder="First Name" maxlength="30" required  >
+
+              <label for="fullname"></label>
+              <input type="text" name="fullname" class="fullname" placeholder="Last Name" maxlength="30" required  >
+            </div>
+
               <label for="email"></label>
               <input type="email" id="email" class="emailAdress" placeholder="Email address" required>
             </div>
-            <div class="message">
+            <div class="message-all">
               <label for="message"></label>
               <input type="text" class="message" name="message" placeholder="Het I'd like to connect to" maxlength="500" required> 
             </div>
             <div class="button">
-              <button type="submit" class="btnsubmit ">Get in touch</button>
+              <button type="submit" class="form-btn-submit ">Get in touch</button>
             </div>
           </Form>
         </div>
 
       </section>
 
+    </div>
+
+
+    <div class="footer-hr">
+      <hr>
+    </div>
       <!-- Start footer part -->
       <footer>
         <div>
-          <p> myemailhere@email.com  </p>
+          <p   class="mail-foorter"> myemailhere@email.com  </p>
         </div>
 
         <div>
@@ -365,9 +386,8 @@
         </div>
       </footer>
 
-      <!-- End footer part  -->
 
      
-    </div>
+   
   </body>
 </html>
